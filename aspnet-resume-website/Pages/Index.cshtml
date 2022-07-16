@@ -1,0 +1,10 @@
+﻿@page
+@using Components
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <component type="typeof(Intro)" render-mode="ServerPrerendered" />
+</div>
