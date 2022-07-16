@@ -1,10 +1,29 @@
 ﻿@page
-@using Components
+@using Components.HomeSections
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
 
 <div class="text-center">
-    <component type="typeof(Intro)" render-mode="ServerPrerendered" />
+    <div class="container">
+        <div class="row">
+            <component type="typeof(Intro)" render-mode="ServerPrerendered" />
+        </div>
+        <div class="row pt-5">
+            <component type="typeof(Skills)" render-mode="ServerPrerendered" />
+        </div>
+        <div class="row pt-5">
+            <component type="typeof(Projects)" render-mode="ServerPrerendered" />
+        </div>
+        <div class="row pt-5">
+            <component type="typeof(Interests)" render-mode="ServerPrerendered" />
+        </div>
+        <div class="row pt-5">
+            <component type="typeof(Hobbies)" render-mode="ServerPrerendered" />
+        </div>
+        <div class="row pt-5">
+            <component type="typeof(Contact)" render-mode="ServerPrerendered" />
+        </div>
+    </div>
 </div>
