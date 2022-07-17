@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - aspnet_resume_website</title>
+    <link rel="icon" href="~/favicon.png" type="image/png"/>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/aspnet_resume_website.styles.css" asp-append-version="true" />
@@ -12,7 +13,7 @@
     <header>
         <vc:navbar></vc:navbar>
     </header>
-    <div class="container">
+    <div class="container" style="background-color: var(--surface-color);">
         <main id="Top" role="main" class="pb-3">
             <div>
                 @RenderBody()
