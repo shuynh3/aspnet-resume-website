@@ -1,18 +1,24 @@
-﻿<div class="intro">
-    <p class="" style="font-size: 1rem; margin-bottom: 0.25rem;">Hi my name is</p>
-    <p class="" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.1rem;">Sonny Huynh</p>
-    <p class="" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.1rem;">I build things for fun!</p>
-    <p class="" style="font-size: 1rem;">I am a Phoenix-based full-stack software engineer who enjoys solving unique problems and learning new things.</p>
-    <div class="d-flex flex-row">
-        <div class="me-3" style="">
-            <form action="/#Contact" method="get">
-                <button class="btn">Get in touch</button>
-            </form>
-        </div>
-        <div>
-            <form action="/Resume" method="get">
-                <button class="btn">What I've done</button>
-            </form>
+﻿<head>
+    <link rel="stylesheet" href="~/css/intro.css" asp-append-version="true" />
+</head>
+
+<div class="intro-container">
+    <p class="intro-label">Hi my name is</p>
+    <p class="name-label">Sonny Huynh.</p>
+    <p class="quip-label">I build things for fun!</p>
+    <div>
+        <p class="description-label">I am a Phoenix-based full-stack software engineer who enjoys solving unique problems and learning new things.</p>
+        <div class="d-flex flex-row justify-content-between">
+            <div>
+                <form action="/#Contact" method="get">
+                    <button class="btn">Get in touch</button>
+                </form>
+            </div>
+            <div>
+                <form action="/Resume" method="get">
+                    <button class="btn">What I've done</button>
+                </form>
+            </div>
         </div>
     </div>
 </div>
