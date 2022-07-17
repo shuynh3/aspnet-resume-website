@@ -2,15 +2,15 @@
 
 namespace aspnet_resume_website.Pages.Components.Skills
 {
-    public class SkillsViewComponent : ViewComponent
+    public class WorkViewComponent : ViewComponent
     {
-        public SkillsViewComponent()
+        public WorkViewComponent()
         {
         }
 
         public IViewComponentResult Invoke()
         {
-            return View("Skills");
+            return View("Work");
         }
     }
 }
