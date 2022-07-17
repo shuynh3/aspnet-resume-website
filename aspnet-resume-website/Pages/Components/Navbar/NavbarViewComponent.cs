@@ -10,7 +10,7 @@ namespace aspnet_resume_website.Pages.Components.Navbar
         }
         public IViewComponentResult Invoke()
         {
-            return View("Default");
+            return View("Navbar");
         }
     }
 }

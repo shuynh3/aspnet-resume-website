@@ -1,6 +1,4 @@
-﻿@addTagHelper *, aspnet-resume-website
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -15,18 +13,14 @@
         <vc:navbar></vc:navbar>
     </header>
     <div class="container">
-        <main role="main" class="pb-3">
-            <div style="padding-top: 7rem;">
+        <main id="Top" role="main" class="pb-3">
+            <div>
                 @RenderBody()
             </div>
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            Created by Sonny Huynh using ASP.NET
-        </div>
-    </footer>
+    <vc:footer></vc:footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

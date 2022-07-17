@@ -16,3 +16,12 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+.section {
+    margin-top: 8rem;
+}

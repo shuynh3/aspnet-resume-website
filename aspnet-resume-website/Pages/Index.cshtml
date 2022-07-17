@@ -1,5 +1,4 @@
 ﻿@page
-@using Components.Index.Sections
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -7,23 +6,23 @@
 
 <div class="text-center">
     <div class="container">
-        <div class="row">
-            <component type="typeof(Intro)" render-mode="ServerPrerendered" />
+        <div id="Intro" class="row">
+            <vc:intro></vc:intro>
         </div>
-        <div class="row pt-5">
-            <component type="typeof(Skills)" render-mode="ServerPrerendered" />
+        <div id="Skills" class="row">
+            <vc:skills></vc:skills>
         </div>
-        <div class="row pt-5">
-            <component type="typeof(Projects)" render-mode="ServerPrerendered" />
+        <div id="Projects" class="row">
+            <vc:projects></vc:projects>
         </div>
-        <div class="row pt-5">
-            <component type="typeof(Interests)" render-mode="ServerPrerendered" />
+        <div id="Interests" class="row">
+            <vc:interests></vc:interests>
         </div>
-        <div class="row pt-5">
-            <component type="typeof(Hobbies)" render-mode="ServerPrerendered" />
+        <div id="Hobbies" class="row">
+            <vc:hobbies></vc:hobbies>
         </div>
-        <div class="row pt-5">
-            <component type="typeof(Contact)" render-mode="ServerPrerendered" />
+        <div id="Contact" class="row">
+            <vc:contact></vc:contact>
         </div>
     </div>
 </div>
