@@ -1,4 +1,12 @@
-﻿.image-container-top {
+﻿.social-link {
+    color: black;
+}
+
+.social-icon {
+    font-size: 2rem;
+}
+
+.image-container-top {
     height: 13rem;
     width: auto;
     background-image: url("/images/PortraitWide.png");

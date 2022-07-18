@@ -8,8 +8,7 @@
 .intro-container {
     padding-top: 8rem;
     text-align: start;
-    min-width: 75vw;
-    max-width: 75vw;
+    width: 75vw;
 }
 
 .intro-label {
@@ -36,8 +35,7 @@
 
 @media (min-width: 576px) {
     .intro-container {
-        min-width: 65vw;
-        max-width: 65vw;
+        width: 65vw;
     }
 
     .intro-label {
@@ -62,16 +60,14 @@
     }
 
     .btn {
-        min-width: 12rem;
-        max-width: 12rem;
+        width: 12rem;
         font-size: 1.2rem;
     }
 }
 
 @media (min-width: 768px) {
     .intro-container {
-        min-width: 70vw;
-        max-width: 70vw;
+        width: 70vw;
     }
 
     .intro-label {
@@ -96,10 +92,8 @@
     }
 
     .btn {
-        min-width: 15rem;
-        max-width: 15rem;
-        min-height: 2.9rem;
-        max-height: 2.9rem;
+        width: 15rem;
+        height: 2.9rem;
         font-size: 1.3rem;
     }
 }

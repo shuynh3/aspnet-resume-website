@@ -34,10 +34,8 @@ body {
     padding-bottom: 0.5rem;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
-    min-width: 10rem;
-    max-width: 10rem;
-    min-height: 2.7rem;
-    max-height: 2.7rem;
+    width: 10rem;
+    height: 2.7rem;
     font-size: 1.15rem;
     font-weight: bold;
 }
@@ -47,13 +45,15 @@ body {
     color: var(--surface-color);
 }
 
-.section {
+.section, .section-clear {
     margin-top: 8rem;
-    background-color: white;
     padding: 2rem;
-    min-width: 95vw;
-    max-width: 95vw;
+    width: 95vw;
     text-align: start;
+}
+
+.section {
+    background-color: white;
     box-shadow: 1px 1px 5px #e6e7e8, -1px -1px 5px #e6e7e8;
 }
 
@@ -67,23 +67,20 @@ p.section-body {
 }
 
 @media (min-width: 576px) {
-    .section {
-        min-width: 85vw;
-        max-width: 85vw;
+    .section, .section-clear {
+        width: 85vw;
     }
 }
 
 @media (min-width: 768px) {
-    .section {
-        min-width: 85vw;
-        max-width: 85vw;
+    .section, .section-clear {
+        width: 85vw;
     }
 }
 
 @media (min-width: 992px) {
-    .section {
-        min-width: 70vw;
-        max-width: 70vw;
+    .section, .section-clear {
+        width: 70vw;
     }
 }
 
