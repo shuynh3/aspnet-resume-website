@@ -1,0 +1,29 @@
+﻿.image-container-top {
+    height: 13rem;
+    width: auto;
+    background-image: url("/images/PortraitWide.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+}
+
+.image-container-right {
+    display: none;
+    height: auto;
+    background-image: url("/images/Portrait.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+@media (min-width: 576px) {
+    .image-container-top {
+        display: none;
+    }
+
+    .image-container-right {
+        display: block;
+        width: 60rem;
+    }
+}

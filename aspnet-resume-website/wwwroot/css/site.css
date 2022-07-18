@@ -66,7 +66,21 @@ p.section-body {
     font-size: 1rem;
 }
 
+@media (min-width: 576px) {
+    .section {
+        min-width: 85vw;
+        max-width: 85vw;
+    }
+}
+
 @media (min-width: 768px) {
+    .section {
+        min-width: 85vw;
+        max-width: 85vw;
+    }
+}
+
+@media (min-width: 992px) {
     .section {
         min-width: 70vw;
         max-width: 70vw;
@@ -74,21 +88,27 @@ p.section-body {
 }
 
 /*
-    XS
-@media (min-width: 0px) { }
+@media (min-width: 0px) { 
 
-    SM
-@media (min-width: 576px) { }
+}
 
-    MD
-@media (min-width: 768px) { }
+@media (min-width: 576px) { 
+    
+}
 
-    LG
-@media (min-width: 992px) { }
+@media (min-width: 768px) { 
+    
+}
 
-    XL
-@media (min-width: 1200px) { }
+@media (min-width: 992px) { 
+    
+}
 
-    XXL
-@media (min-width: 1400px) { }
+@media (min-width: 1200px) { 
+    
+}
+
+@media (min-width: 1400px) { 
+    
+}
 */
