@@ -1,5 +1,16 @@
-﻿.social-link {
+﻿:root {
+    --surface-color: #f8f9fa;
+    --surface-secondary-color: #e8e8e8;
+    --primary-color: #708f61;
+    --secondary-color: #8cad7b;
+}
+
+.social-link {
     color: black;
+}
+
+.social-link:hover {
+    color: var(--primary-color)
 }
 
 .social-icon {
