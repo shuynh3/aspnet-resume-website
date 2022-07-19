@@ -1,0 +1,43 @@
+﻿.icon, .icon-wide {
+    margin: 0.5rem;
+    height: 2.5rem;
+    transition: all .15s ease-in-out;
+}
+
+.icon {
+    width: 2.5rem;
+}
+
+.icon-wide {
+    width: 5rem;
+}
+
+.icon:hover, .icon-wide:hover {
+    transform: scale(1.2);
+}
+
+/*.icon-section {
+    margin-top: 0.2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.75rem;
+    background-color: white;
+    box-shadow: 1px 1px 5px #e6e7e8, -1px -1px 5px #e6e7e8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+}*/
+
+/*.filler-section {
+    margin: 0.5rem;
+    background-color: white;
+    box-shadow: inset 1px 1px 5px #e6e7e8, -1px -1px 5px #e6e7e8;
+    border-radius: 1rem;
+}*/
+
+.icon-section-title {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+    padding-bottom: 0rem;
+}
