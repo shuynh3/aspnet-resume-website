@@ -2,79 +2,15 @@
     <link rel="stylesheet" href="~/css/tech.css" asp-append-version="true" />
 </head>
 
-<div class="section-clear" style="margin: 2rem">
-    <div>
-        <div class="icon-section">
-            <p class="icon-section-title"> Languages </p>
-            <div class="d-flex flex-column">
-                <div class="flex-row align-self-center" style="margin-bottom: -1.5rem;">
-                    <a href="https://www.python.org" target="_blank"><img src="/images/python.png" alt="Python" class="icon"/></a>
-                </div>
-                <div class="flex-row align-self-center">
-                    <a class="me-5" href="https://isocpp.org/" target="_blank"><img src="/images/cplusplus.png" alt="C++" class="icon"/></a>
-                    <a href="https://www.ruby-lang.org/en/" target="_blank"><img src="/images/ruby.png" alt="Ruby" class="icon"/></a>
-                </div>
-                <div class="flex-row align-self-center">
-                    <a class="me-5" href="https://www.postgresql.org/" target="_blank"><img src="/images/postgres.png" alt="PostgreSQL" class="icon"/></a>
-                    <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank"><img src="/images/csharp.png" alt="Csharp" class="icon"/></a>
-                </div>
-                <div class="flex-row align-self-center" style="margin-top: -1.5rem;">
-                    <a href="https://www.java.com/en/" target="_blank"><img src="/images/java.png" alt="Java" class="icon"/></a>
-                </div>
-            </div>
-        </div>
-        <div class="row icon-section">
-            <p class="icon-section-title"> Web Apps & REST Services </p>
-            <div class="d-flex flex-column">
-                <div class="flex-row align-self-center">
-                    <a href="https://tailwindcss.com/" target="_blank"><img src="/images/tailwind.png" alt="Tailwind" class="icon"/></a>
-                    <a href="https://getbootstrap.com/" target="_blank"><img src="/images/bootstrap.png" alt="Bootstrap" class="icon"/></a>
-                </div>
-                <div class="flex-row align-self-center">
-                    <a href="https://dotnet.microsoft.com/en-us/" target="_blank"><img src="/images/aspnet.png" alt="ASPNET" class="icon-wide"/></a>
-                    <a href="https://rubyonrails.org/" target="_blank"><img src="/images/rails.png" alt="Rails" class="icon-wide"/></a>
-                </div>
-                <div class="flex-row align-self-center">
-                    <a href="https://www.djangoproject.com/" target="_blank"><img src="/images/django.png" alt="Django" class="icon-wide"/></a>
-                </div>
-            </div>
-        </div>
-        <div class="row icon-section">
-            <p class="icon-section-title"> Infrastructure </p>
-            <div class="d-flex flex-column">
-                <div class="flex-row align-self-center">
-                    <a href="https://aws.amazon.com/" target="_blank"><img src="/images/aws.png" alt="AWS" class="icon"/></a>
-                    <a href="https://azure.microsoft.com/en-us/" target="_blank"><img src="/images/azure.png" alt="Azure" class="icon"/></a
-                </div>
-                <div class="flex-row align-self-center">
-                    <a href="https://www.pulumi.com/" target="_blank"><img src="/images/pulumi.png" alt="Pulumi" class="icon"/></a>
-                    <a href="https://github.com/" target="_blank"><img src="/images/github.png" alt="Github" class="icon"/></a
-                </div>
-            </div>
-        </div>
-        <div class="row icon-section">
-            <p class="icon-section-title"> Testing </p>
-            <div class="d-flex flex-column">
-                <div class="flex-row align-self-center">
-                    <a href="https://site.mockito.org/" target="_blank"><img src="/images/mockito.png" alt="Mockito" class="icon-wide"/></a>
-                </div>
-                <div class="flex-row align-self-center">
-                    <a href="https://rspec.info/" target="_blank"><img src="/images/rspec.png" alt="rspec" class="icon"/></a
-                    <a href="https://github.com/moq/moq4" target="_blank"><img src="/images/moq.png" alt="Moq" class="icon"/></a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <p class="icon-section-title"> Tracking </p>
-            <div class="d-flex flex-column">
-                <div class="flex-row align-self-center">
-                    <a href="https://docs.sentry.io/product/alerts/" target="_blank"><img src="/images/sentry.png" alt="Sentry" class="icon"/></a>
-                </div>
-                <div class="flex-row align-self-center">
-                    <a href="https://www.atlassian.com/software/opsgenie" target="_blank"><img src="/images/opsgenie.png" alt="Opsgenie" class="icon"/></a>
-                    <a href="https://aws.amazon.com/cloudwatch/" target="_blank"><img src="/images/cloudwatch.png" alt="Cloudwatch" class="icon"/></a>
-                </div>
-            </div>
-        </div>
+<div class="section-clear p-0">
+    <div class="tech-title d-flex justify-content-center">
+        <p class="section-title tech-title-label"> My Tech Stack</p>
     </div>
+    <div class="d-flex flex-wrap justify-content-evenly mt-5">
+        <vc:techlanguages></vc:techlanguages>
+        <vc:techtesting></vc:techtesting>
+        <vc:techinfrastructure></vc:techinfrastructure>
+        <vc:techtracking></vc:techtracking>
+        <vc:techweb></vc:techweb>
+    </div> 
 </div>

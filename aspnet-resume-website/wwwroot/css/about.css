@@ -15,6 +15,11 @@
 
 .social-icon {
     font-size: 2rem;
+    transition: all .10s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
 }
 
 .image-container-top {
