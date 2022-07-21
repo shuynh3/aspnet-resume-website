@@ -2,49 +2,8 @@
     <link rel="stylesheet" href="~/css/projects.css" asp-append-version="true" />
 </head>
 
-<script>
-    var paypalImage = 0
-    console.log(paypalImage)
-
-    function previousPaypal() {
-        if (paypalImage == 0) {
-            document.getElementById("paypal-image-0").style.display = "none";
-            document.getElementById("paypal-image-2").style.display = "block";
-            paypalImage = 2
-        }
-        else if (paypalImage == 1) {
-            document.getElementById("paypal-image-1").style.display = "none";
-            document.getElementById("paypal-image-0").style.display = "block";
-            paypalImage = 0
-        }
-        else {
-            document.getElementById("paypal-image-2").style.display = "none";
-            document.getElementById("paypal-image-1").style.display = "block";
-            paypalImage = 1
-        }
-    }
-
-    function nextPaypal() {
-        if (paypalImage == 0) {
-            document.getElementById("paypal-image-0").style.display = "none";
-            document.getElementById("paypal-image-1").style.display = "block";
-            paypalImage = 1
-        }
-        else if (paypalImage == 1) {
-            document.getElementById("paypal-image-1").style.display = "none";
-            document.getElementById("paypal-image-2").style.display = "block";
-            paypalImage = 2
-        }
-        else {
-            document.getElementById("paypal-image-2").style.display = "none";
-            document.getElementById("paypal-image-0").style.display = "block";
-            paypalImage = 0
-        }
-    }
-</script>
-
 <div class="section">
-    <p class="section-title mb-4">Projects</p>
+    <p class="section-title mb-4">My Projects</p>
     <div class="d-flex flex-wrap justify-content-evenly">
         <vc:paypalproject></vc:paypalproject>
         <vc:photographyproject></vc:photographyproject>
