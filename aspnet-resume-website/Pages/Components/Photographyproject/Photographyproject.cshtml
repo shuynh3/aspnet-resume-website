@@ -1,0 +1,39 @@
+﻿<head>
+    <link rel="stylesheet" href="~/css/projects.css" asp-append-version="true" />
+</head>
+
+<script>
+    var photographyImage = 0
+
+    function previousPhotography() {
+    }
+
+    function nextPhotography() {
+    }
+</script>
+
+<div class="d-flex flex-column project-section">
+    <div class="project-image-container">
+        <div id="photography-image-0" class="photography-image-0 project-image"></div>
+        <div class="prev-image-button" onclick="previousPhotography()">
+            <h1><i class="bi  bi-arrow-left-circle-fill"></i></h1>
+        </div>
+        <div class="next-image-button" onclick="nextPhotography()">
+            <h1><i class="bi  bi-arrow-right-circle-fill"></i></h1>
+        </div>
+    </div>
+    <div class="project-info">
+        <div class="d-flex justify-content-between">
+            <p class="project-title">Photography Website</p>
+            <div class="d-flex">
+                <a class="project-link" style="" href="" target="_blank">
+                    <h1 class="project-icon me-4"><i class="bi-arrow-90deg-up"></i></h1>
+                </a>
+                <a class="project-link" style="" href="" target="_blank">
+                    <h1 class="project-icon me-4"><i class="bi  bi-github"></i></h1>
+                </a>
+            </div>
+        </div>
+        <p class="project-desc">A website to showcase pictures that I take on trips with friends.</p>
+    </div>
+</div>
