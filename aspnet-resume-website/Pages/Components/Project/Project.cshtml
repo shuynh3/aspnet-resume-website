@@ -1,0 +1,47 @@
+﻿@model Project.ProjectModel
+<head>
+    <link rel="stylesheet" href="~/css/projects.css" asp-append-version="true" />
+</head>
+
+<style>
+    @Html.Raw(Model.ImageStyleClasses)
+</style>
+
+<div class="d-flex flex-column project-section">
+    <div class="project-image-container">
+        @if (Model.ImageCentered)
+        {
+            <div id="@Model.ImageId" class="project-image-centered @Model.DefaultImageClass"></div>
+        }
+        else
+        {
+            <div id="@Model.ImageId" class="project-image @Model.DefaultImageClass"></div>
+        }
+        <div class="prev-image-button" onclick="changeImage('left', '@Model.ImageId', @Model.ImageClassesString)">
+            <h1><i class="bi  bi-arrow-left-circle-fill"></i></h1>
+        </div>
+        <div class="next-image-button" onclick="changeImage('right', '@Model.ImageId', @Model.ImageClassesString)">
+            <h1><i class="bi  bi-arrow-right-circle-fill"></i></h1>
+        </div>
+    </div>
+    <div class="project-info">
+        <div class="d-flex justify-content-between">
+            <p class="project-title">@Model.Title</p>
+            <div class="d-flex">
+                @if (Model.Link is not null)
+                {
+                    <a class="project-link" style="" href="@Model.Link" target="_blank">
+                        <h1 class="project-icon me-4"><i class="bi-arrow-90deg-up"></i></h1>
+                    </a>
+                }
+                @if (Model.GithubLink is not null)
+                {
+                    <a class="project-link" style="" href="@Model.GithubLink" target="_blank">
+                        <h1 class="project-icon me-4"><i class="bi  bi-github"></i></h1>
+                    </a>
+                }
+            </div>
+        </div>
+        <p class="project-desc">@Model.Description</p>
+    </div>
+</div>

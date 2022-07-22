@@ -65,7 +65,7 @@
     right: 10%;
 }
 
-.project-image {
+.project-image, .project-image-centered {
     height: 14rem;
     width: 100%;
     background-size: cover;
@@ -73,22 +73,7 @@
     background-position: 50% 0%;
 }
 
-.paypal-image-0 {
-    background-image: url("/images/paypalsite0.png");
-}
-
-.paypal-image-1 {
-    display: none;
-    background-image: url("/images/paypalsite1.png");
-}
-
-.paypal-image-2 {
-    display: none;
-    background-image: url("/images/paypalsite2.png");
-}
-
-.photography-image-0 {
-    background-image: url("/images/wip.png");
+.project-image-centered {
     background-position: 50% 50%;
 }
 
@@ -110,13 +95,13 @@
 }
 
 @media (min-width: 576px) {
-    .project-image {
+    .project-image, .project-image-centered {
         height: 15rem;
     }
 }
 
 @media (min-width: 768px) {
-    .project-image {
+    .project-image, .project-image-centered {
         height: 17rem;
     }
     .project-section {
@@ -125,7 +110,7 @@
 }
 
 @media (min-width: 992px) {
-    .project-image {
+    .project-image, .project-image-centered {
         height: 20rem;
     }
 }

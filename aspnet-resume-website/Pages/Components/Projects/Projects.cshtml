@@ -2,10 +2,47 @@
     <link rel="stylesheet" href="~/css/projects.css" asp-append-version="true" />
 </head>
 
+<script>
+    function changeImage(direction, elementId, classes) {
+        let image = document.getElementById(elementId);
+        let lastIndex = image.classList.length - 1;
+        let currentClass = image.classList[lastIndex];
+        let newClass = (direction == 'left') ? getImageClassInList(direction, currentClass, classes) : getImageClassInList(direction, currentClass, classes);
+        image.classList.remove(currentClass);
+        image.classList.add(newClass);
+    }
+
+    function getImageClassInList(direction, currentClass, classes) {
+        let size = classes.length;
+        let index = classes.indexOf(currentClass);
+        if (direction == 'left')
+            index = (index - 1 < 0) ? size - 1 : index - 1;
+        else
+            index = (index + 1 >= size) ? 0 : index + 1;
+        return classes[index];
+    }
+</script>
+
 <div class="section">
     <p class="section-title mb-4">My Projects</p>
     <div class="d-flex flex-wrap justify-content-evenly">
-        <vc:paypalproject></vc:paypalproject>
-        <vc:photographyproject></vc:photographyproject>
+        <vc:project
+            title="Paypal-Static-Site-Generator"
+            description="A plugin for the static website generator, Gatsby. It outputs an ecommerce website that also pulls elements from a structured file-system."
+            image-file-names="project-paypal-0 project-paypal-1 project-paypal-2"
+            github-link="https://github.com/bbruns97/PayPal-Static-Site-Generator"
+            link="https://bbruns97.github.io/PayPal-Static-Site-Generator/">
+        </vc:project>
+        <vc:project
+            title="Paypal-Static-Site-Generator"
+            description="A plugin for the static website generator, Gatsby. It outputs an ecommerce website that also pulls elements from a structured file-system."
+            image-file-names="project-paypal-0 project-paypal-1 project-paypal-2">
+        </vc:project>
+        <vc:project
+            title="Photography Website"
+            description="A website to showcase pictures that I take on trips with friends."
+            image-file-names="wip"
+            image-centered=true>
+        </vc:project>
     </div>
 </div>
