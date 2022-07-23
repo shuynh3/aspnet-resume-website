@@ -1,7 +1,7 @@
 ﻿.project-section {
     margin-bottom: 2rem;
     width: 100%;
-    background-color: var(--surface-color);
+    background-color: #FFFFFF;
     box-shadow: 1px 1px 5px #e6e7e8, -1px -1px 5px #e6e7e8;
 }
 
@@ -27,7 +27,9 @@
     top: 0;
     height: 100%;
     width: 35%;
+    cursor: pointer;
 }
+
 
 .prev-image-button {
     left: 0;
@@ -71,6 +73,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0%;
+    box-shadow: inset 0px -1px 5px #e6e7e8;
 }
 
 .project-image-centered {

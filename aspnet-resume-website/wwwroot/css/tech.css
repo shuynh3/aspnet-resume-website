@@ -56,24 +56,3 @@
         margin-bottom: 3rem;
     }
 }
-
-.tech-title {
-    position: relative;
-}
-
-.tech-title-label {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    background-color: var(--surface-color);
-}
-
-.tech-title::before {
-    content: '';
-    width: 100%;
-    border-bottom: solid 1px gray;
-    border-left: 1px solid gray;
-    position: absolute;
-    left: 0rem;
-    top: 1.6rem;
-    z-index: -2;
-}

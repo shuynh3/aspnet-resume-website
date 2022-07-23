@@ -61,6 +61,28 @@ p.section-title {
     font-size: 2rem;
 }
 
+.section-title-clear {
+    position: relative;
+}
+
+.section-title-clear-label {
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: var(--surface-color);
+}
+
+.section-title-clear::before {
+    content: '';
+    width: 100%;
+    border-bottom: solid 1px gray;
+    border-left: 1px solid gray;
+    position: absolute;
+    left: 0rem;
+    top: 1.6rem;
+    z-index: -2;
+}
+
 p.section-body {
     text-align: start;
     font-size: 1rem;
