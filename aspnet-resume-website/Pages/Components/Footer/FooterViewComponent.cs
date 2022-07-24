@@ -8,8 +8,10 @@ namespace aspnet_resume_website.Pages.Components.Footer
         {
 
         }
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(bool mobile = false)
         {
+            if (mobile == true)
+                return View("FooterMobile");
             return View("Footer");
         }
     }

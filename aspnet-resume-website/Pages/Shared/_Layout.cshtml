@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <vc:navbar></vc:navbar>
+        <vc:navbar />
     </header>
     <div class="container">
         <main id="Top" role="main">
@@ -20,7 +20,8 @@
         </main>
     </div>
 
-    <vc:footer></vc:footer>
+    <div class="d-none d-md-block"><vc:footer/></div>
+    <div class="d-md-none"><vc:footer mobile=true/></div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

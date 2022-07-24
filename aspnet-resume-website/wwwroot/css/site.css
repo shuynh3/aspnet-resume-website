@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    margin-bottom: 60px;
+    margin-bottom: 5rem;
     background-color: var(--surface-color);
 }
 
@@ -88,6 +88,21 @@ p.section-body {
     font-size: 1rem;
 }
 
+.social-icon-footer {
+    color: #83757D;
+    font-size: 1.5rem;
+    transition: all .10s ease-in-out;
+}
+
+.social-icon-footer:hover {
+    color: var(--secondary-color);
+    transform: scale(1.2);
+}
+
+.footer {
+    margin-top: 3rem;
+}
+
 @media (min-width: 576px) {
     .section, .section-clear {
         width: 85vw;
@@ -97,6 +112,10 @@ p.section-body {
 @media (min-width: 768px) {
     .section, .section-clear {
         width: 85vw;
+        margin-top: 5rem;
+    }
+
+    .footer {
         margin-top: 5rem;
     }
 }
