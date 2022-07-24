@@ -8,9 +8,11 @@ namespace aspnet_resume_website.Pages.Components.Techinfrastructure
         {
         }
 
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(bool mobile = false)
         {
-            return View("Techinfrastructure");
+            if (mobile == true)
+                return View("TechInfrastructureMobile");
+            return View("TechInfrastructure");
         }
     }
 }

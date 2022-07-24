@@ -8,9 +8,11 @@ namespace aspnet_resume_website.Pages.Components.Techtracking
         {
         }
 
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(bool mobile = false)
         {
-            return View("Techtracking");
+            if (mobile == true)
+                return View("TechTrackingMobile");
+            return View("TechTracking");
         }
     }
 }

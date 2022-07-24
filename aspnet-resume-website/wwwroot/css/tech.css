@@ -16,17 +16,12 @@
     transform: scale(1.2);
 }
 
-.icon-section-title-top {
-    position: absolute;
-    top: -2.5rem;
+.icon-section-title {
     font-size: 1.25rem;
-}
-
-.icon-section-title-bottom {
-    display: none;
-    position: absolute;
-    bottom: 0.5rem;
-    font-size: 1.25rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: var(--surface-color);
+    margin-bottom: 1.5rem;
 }
 
 .icon-section {
@@ -37,17 +32,16 @@
     padding-top: 0.5rem;
 }
 
+.icon-section-mobile {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding-top: 0.5rem;
+}
+
 @media (min-width: 472px) {
     .icon-section {
         padding-top: 0rem;
-    }
-
-    .icon-section-title-top {
-        display: none;
-    }
-
-    .icon-section-title-bottom {
-        display: inline;
     }
 }
 

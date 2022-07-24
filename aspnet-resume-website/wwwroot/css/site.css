@@ -46,7 +46,7 @@ body {
 }
 
 .section, .section-clear {
-    margin-top: 5rem;
+    margin-top: 4rem;
     padding: 2rem;
     width: 95vw;
     text-align: start;
@@ -97,6 +97,7 @@ p.section-body {
 @media (min-width: 768px) {
     .section, .section-clear {
         width: 85vw;
+        margin-top: 5rem;
     }
 }
 

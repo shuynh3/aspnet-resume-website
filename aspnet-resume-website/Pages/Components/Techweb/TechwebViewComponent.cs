@@ -8,9 +8,11 @@ namespace aspnet_resume_website.Pages.Components.Techweb
         {
         }
 
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(bool mobile = false)
         {
-            return View("Techweb");
+            if (mobile == true)
+                return View("TechWebMobile");
+            return View("TechWeb");
         }
     }
 }

@@ -8,9 +8,11 @@ namespace aspnet_resume_website.Pages.Components.Techtesting
         {
         }
 
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(bool mobile = false)
         {
-            return View("Techtesting");
+            if (mobile == true)
+                return View("TechTestingMobile");
+            return View("TechTesting");
         }
     }
 }
