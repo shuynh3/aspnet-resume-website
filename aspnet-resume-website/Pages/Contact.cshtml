@@ -1,8 +1,26 @@
 ﻿@page
 @model aspnet_resume_website.Pages.ContactModel
-@{
-}
 
-<div>
-    Under construction
+<head>
+    <link rel="stylesheet" href="~/css/contact.css" asp-append-version="true" />
+</head>
+
+<div class="form-section d-flex justify-content-evenly">
+    <div class="d-flex flex-column justify-content-center" style="width: 100%;">
+        <p class="section-title form-title">Send me an email</p>
+        <form>
+            <fieldset class="d-flex flex-column">
+                <div class="form-div">
+                    <input id="input-name" class="form-input" placeholder="Name" />
+                </div>
+                <div class="form-div">
+                    <input id="input-email" class="form-input" placeholder="Email" />
+                </div>
+                <div class="form-div-big">
+                    <textarea id="input-message" class="form-input-big" placeholder="Message"></textarea>
+                </div>
+                <input id="input-send" type="submit" value="Submit" class="send-button" />
+            </fieldset>
+        </form>
+    </div>
 </div>
