@@ -36,12 +36,13 @@
     height: 10rem;
 }
 
-.form-div, .form-div-big {
+.form-div {
     height: 4rem;
 }
 
 .form-div-big {
-    height: 12rem;
+    height: auto;
+    margin-bottom: 1.25rem;
 }
 
 
