@@ -38,11 +38,13 @@ body {
     height: 2.7rem;
     font-size: 1.15rem;
     font-weight: bold;
+    transition: all .05s ease-in-out;
 }
 
 .btn:hover {
     background-color: var(--secondary-color);
     color: var(--surface-color);
+    transform: scale(1.05);
 }
 
 .section, .section-clear {
