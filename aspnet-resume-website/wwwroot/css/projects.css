@@ -6,6 +6,7 @@
 }
 
 .project-info {
+    height: 100%;
     padding: 1rem;
 }
 
@@ -29,7 +30,6 @@
     width: 35%;
     cursor: pointer;
 }
-
 
 .prev-image-button {
     left: 0;
@@ -76,6 +76,20 @@
     box-shadow: inset 0px -1px 5px #e6e7e8;
 }
 
+.project-tech-stack-image {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-right: 0.75rem;
+    transition: all .05s ease-in-out;
+}
+
+.project-tech-stack-image:hover {
+    transform: scale(1.2);
+}
+
 .project-image-centered {
     background-position: 50% 50%;
 }
@@ -85,12 +99,12 @@
 }
 
 .project-link:hover {
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 .project-icon {
     font-size: 1.5rem;
-    transition: all .10s ease-in-out;
+    transition: all .05s ease-in-out;
 }
 
 .project-icon:hover {
