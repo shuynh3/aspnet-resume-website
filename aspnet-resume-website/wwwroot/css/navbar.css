@@ -2,3 +2,94 @@
     position: fixed;
     width: 100%;
 }
+
+.navbar-link-container button {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    transition: all 0.1s ease-in-out;
+    position: relative;
+}
+
+.navbar-link-container {
+    cursor: pointer;
+    margin: 1.25rem 0rem 1.25rem 1rem;
+    position: relative;
+}
+
+.navbar-link-container:after {
+    display: none;
+    content: '';
+    width: 85%;
+    border-bottom: solid 2px var(--primary-color);
+    border-left: 2px solid var(--primary-color);
+    position: absolute;
+    bottom: 15%;
+    left: 8%;
+    animation: 0.1s slide;
+}
+
+.home-image {
+    position: relative;
+    cursor: pointer;
+    height: 1.5rem;
+    width: 8rem;
+    background-image: url("/images/sonnyhuynh.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(0%, 5%);
+}
+
+.home-image:after {
+    display: none;
+    content: '';
+    width: 87%;
+    border-bottom: solid 2px var(--primary-color);
+    border-left: 2px solid var(--primary-color);
+    position: absolute;
+    left: 3%;
+    bottom: 0%;
+    animation: 0.1s slide-image;
+}
+
+@media (min-width: 576px) {
+    .navbar-link-container {
+        margin: 0rem 0rem 0rem 2rem;
+    }
+
+    .navbar-link-container button {
+        font-size: 1.2rem;
+    }
+
+    .home-image:hover {
+        transform: translate(0%, -5%);
+    }
+
+    .home-image:hover::after {
+        display: block;
+    }
+
+    .navbar-link-container:hover button {
+        transform: translate(0, -0.1rem);
+    }
+
+    .navbar-link-container:hover::after {
+        display: block;
+    }
+
+    @keyframes slide {
+        from {
+            bottom: 25%;
+        }
+    }
+
+    @keyframes slide-image {
+        from {
+            bottom: 15%;
+        }
+    }
+}

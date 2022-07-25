@@ -34,7 +34,7 @@ body {
     padding-bottom: 0.5rem;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
-    width: 10rem;
+    width: 10.5rem;
     height: 2.7rem;
     font-size: 1.15rem;
     font-weight: bold;
@@ -116,7 +116,6 @@ p.section-body {
         width: 85vw;
         margin-top: 5rem;
     }
-
     .footer {
         margin-top: 5rem;
     }

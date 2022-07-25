@@ -2,36 +2,39 @@
     <link rel="stylesheet" href="~/css/navbar.css" asp-append-version="true" />
 </head>
 
+<body onload="removeHash()"></body>
+
 <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3" style="z-index: 99;">
-    <div class="container">
-        <a class="navbar-brand" href="/#Top">Sonny Huynh</a>
+    <div class="container navbar-container">
+        <div class="home-image" onclick="navigateTo('/#Top')"></div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-            <ul class="navbar-nav flex-grow-1">
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="/#Top">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="/#About">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="/#Projects">Projects</a>
-                </li>
-                @*<li class="nav-item">
-                    <a class="nav-link text-dark" href="/#Hobbies">Hobbies</a>
-                </li>*@
-                @*<li class="nav-item">
-                    <a class="nav-link text-dark" asp-page="/Contact">Contact</a>
-                </li>*@
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-page="/Resume">Resume</a>
-                </li>
-            </ul>
+        <div class="navbar-collapse collapse d-sm-inline-flex">
+            <div class="navbar-link-container">
+                <button onclick="navigateTo('/#Top')">Home</button>
+            </div>
+            <div class="navbar-link-container">
+                <button onclick="navigateTo('/#About')">About</button>
+            </div>
+            <div class="navbar-link-container">
+                <button onclick="navigateTo('/#Projects')">Projects</button>
+            </div>
+            <div class="navbar-link-container">
+                <button onclick="navigateTo('/Resume')">Resume</button>
+            </div>
         </div>
     </div>
 </nav>
 
-<script src="~/js/navbar/navbar.js" asp-append-version="true"></script>
+<script>
+    function removeHash() { 
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+    }
+
+    function navigateTo(location) {
+        window.location.href = location;
+        removeHash();
+    }
+</script>

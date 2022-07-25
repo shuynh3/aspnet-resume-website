@@ -3,14 +3,14 @@
     <link rel="stylesheet" href="~/css/resume.css" asp-append-version="true" />
 </head>
 <div class="resume-section d-flex">
-    <div class="resume-icon" style="background-image: url('@Model.ImageLocation')"></div>
-    <div class="resume-info d-flex flex-column">
+    <div class="resume-icon align-self-center" style="background-image: url('@Model.ImageLocation')"></div>
+    <div class="resume-info d-flex flex-column align-self-center">
         <div class="d-flex flex-column align-content-between">
             <div class="d-flex justify-content-between">
                 <div class="resume-info-title">
                     @Model.Title
                 </div>
-                <div class="d-flex resume-info-description">
+                <div class="d-flex resume-info-date align-self-center">
                     @Model.DateString
                 </div>
             </div>
