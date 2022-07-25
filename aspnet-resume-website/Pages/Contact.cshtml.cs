@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace aspnet_resume_website.Pages
@@ -7,6 +6,7 @@ namespace aspnet_resume_website.Pages
     {
         public void OnGet()
         {
+
         }
     }
 }

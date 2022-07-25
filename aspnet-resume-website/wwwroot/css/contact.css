@@ -16,6 +16,7 @@
 }
 
 .form-input, .form-input-big {
+    -webkit-appearance: none;
     outline: none !important;
     align-self: center;
     width: 100%;
