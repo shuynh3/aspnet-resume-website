@@ -35,7 +35,7 @@
             var classNames = imageFileNames.Split(" ");
             for (int i = 0; i < classNames.Length; i++)
             {
-                classNames[0] += uniqueSuffix;
+                classNames[i] += uniqueSuffix;
             }
             return classNames;
         }
